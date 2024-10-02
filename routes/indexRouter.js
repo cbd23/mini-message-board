@@ -16,7 +16,7 @@ const messages = [
   ];  
 
 indexRouter.get("/", (req, res) => {
-    res.render("index")
+    res.render("index", {messages: messages})
 })
 
 export default indexRouter
