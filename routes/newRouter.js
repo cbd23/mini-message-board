@@ -6,4 +6,5 @@ newRouter.get("/", (req, res) => {
     res.render("new")
 })
 
+
 export default newRouter
