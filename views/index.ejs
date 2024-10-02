@@ -3,6 +3,12 @@
         <title>mini message board | Home</title>
     </head>
     <body>
-        <h3>this is the Homepage</h3>
+        <% messages.forEach(message => { %>
+            <h2><%= message.text %></h2>
+            <h3><%= message.user %></h3>
+            <p><%= message.added %></p>
+            <hr>
+            <br>
+        <% }) %>
     </body>
 </html>
