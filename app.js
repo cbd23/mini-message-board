@@ -1,8 +1,11 @@
+// default imports
 import express from "express"
 import { fileURLToPath } from 'url'
 import path from "path"
 
+// import routers
 import indexRouter from "./routes/indexRouter.js"
+import newRouter from "./routes/newRouter.js"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -12,11 +15,8 @@ const app = express()
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
 
+// handle routes using Express Router
 app.use("/", indexRouter)
-
-app.get("/new", (req, res) => {
-    res.render("new")
-})
 
 
 const PORT = 3000
