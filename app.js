@@ -16,6 +16,7 @@ app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
 
 // handle routes using Express Router
+app.use("/new", newRouter)
 app.use("/", indexRouter)
 
 
