@@ -3,10 +3,10 @@
         <title>mini message board | Home</title>
     </head>
     <body>
-        <% messages.forEach(message => { %>
-            <h2><%= message.text %></h2>
+        <% messages.forEach((message, index) => { %>
+            <h2>Hidden Message</h2>
             <h3><%= message.user %></h3>
-            <p><%= message.added %></p>
+            <a href="/message/<%= index %>"><button type="button" >read message</button></a>
             <hr>
             <br>
         <% }) %>
