@@ -4,14 +4,19 @@ const indexRouter = Router()
 
 export const messages = [
     {
-      text: "Hi there!",
-      user: "Amando",
+      text: "Let it be!",
+      user: "Paul",
       added: new Date()
     },
     {
-      text: "Hello World!",
-      user: "Charles",
+      text: "Stay hungry! Stay foolish!",
+      user: "Steve",
       added: new Date()
+    },
+    {
+        text: "I'm so sick",
+        user: "Ne-Yo",
+        added: new Date()
     }
   ]
 
