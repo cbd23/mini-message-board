@@ -3,6 +3,18 @@
         <title>mini message board | Home</title>
     </head>
     <body>
-        <p>hello world</p>
+        <form method="POST" action="/new">
+            <h1>Write a new message</h1>
+            <br>
+            <label for="username">Your name:</label>
+            <input id="username" type="text" name="username">
+            <br>
+            <br>
+            <label for="message">Your message:</label>
+            <input id="message" type="text" name="message">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
