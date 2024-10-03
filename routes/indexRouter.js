@@ -2,7 +2,7 @@ import { Router } from "express"
 
 const indexRouter = Router()
 
-const messages = [
+export const messages = [
     {
       text: "Hi there!",
       user: "Amando",
@@ -13,7 +13,7 @@ const messages = [
       user: "Charles",
       added: new Date()
     }
-  ];  
+  ]
 
 indexRouter.get("/", (req, res) => {
     res.render("index", {messages: messages})
