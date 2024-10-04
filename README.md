@@ -6,4 +6,4 @@
 
 I built this project to get a better understanding of how middleware works in **Express.js** and also to gain experience working in a **Node.js** environment.
 
-It was a great exercise for me since I needed to configure the needed Express.js Routers that handle different requests and to render EJS files from the views directory.
+It was a great exercise for me since I had to configure the required Express.js Routers that handle different requests and to render EJS files from the views directory.
